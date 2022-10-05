@@ -79,7 +79,6 @@
 /datum/game_mode/infestation/crash/post_setup()
 	. = ..()
 	// Gear restrictions
-	GLOB.engineer_clothes_listed_products -= /obj/effect/teleporter_linker
 	GLOB.engineer_clothes_listed_products -= /obj/item/storage/backpack/marine/radiopack // No requisitions avaliable
 	GLOB.engineer_gear_listed_products -= /obj/item/ai_target_beacon // No AI avaliable
 	GLOB.engineer_gear_listed_products -= /obj/item/minerupgrade/overclock // No requisitions avaliable
