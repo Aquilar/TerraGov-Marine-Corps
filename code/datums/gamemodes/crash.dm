@@ -78,6 +78,17 @@
 
 /datum/game_mode/infestation/crash/post_setup()
 	. = ..()
+	// Gear restrictions
+	GLOB.engineer_clothes_listed_products -= /obj/effect/teleporter_linker
+	GLOB.engineer_clothes_listed_products -= /obj/item/storage/backpack/marine/radiopack // No requisitions avaliable
+	GLOB.engineer_gear_listed_products -= /obj/item/ai_target_beacon // No AI avaliable
+	GLOB.engineer_gear_listed_products -= /obj/item/minerupgrade/overclock // No requisitions avaliable
+	GLOB.engineer_gear_listed_products -= /obj/item/minerupgrade/reinforcement // ditto
+	GLOB.leader_gear_listed_products -= /obj/item/storage/backpack/marine/radiopack // ditto
+	GLOB.leader_gear_listed_products -= /obj/item/beacon/supply_beacon // ditto
+	GLOB.leader_gear_listed_products -= /obj/item/fulton_extraction_pack // ditto
+	GLOB.synthetic_clothes_listed_products -= /obj/item/storage/backpack/marine/radiopack // ditto
+
 	for(var/i in GLOB.xeno_resin_silo_turfs)
 		new /obj/structure/xeno/silo(i)
 
