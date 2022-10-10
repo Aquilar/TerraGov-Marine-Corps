@@ -451,6 +451,21 @@ WEAPONS
 	contains = list(/obj/item/ammo_magazine/standard_smartmachinegun)
 	cost = 5
 
+/datum/supply_packs/weapons/smartrifle
+	name = "SG-25 Smart Rifle"
+	contains = list(/obj/item/weapon/gun/rifle/standard_smartrifle)
+	cost = 40
+
+/datum/supply_packs/ammo/smartrifle_magazine
+	name = "SG-25 smartrifle magazine"
+	contains = list(/obj/item/ammo_magazine/rifle/standard_smartrifle)
+	cost = 2
+
+/datum/supply_packs/ammo/smartrifle_ammo
+	name = "SG-25 smartrifle ammo box"
+	contains = list(/obj/item/ammo_magazine/packet/smartrifle)
+	cost = 5
+
 /datum/supply_packs/weapons/smart_minigun
 	name = "SG-85 Smart Handheld Gatling Gun"
 	contains = list(/obj/item/weapon/gun/minigun/smart_minigun)

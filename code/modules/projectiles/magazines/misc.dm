@@ -70,6 +70,16 @@
 	max_rounds = 500
 	w_class = WEIGHT_CLASS_NORMAL
 
+/obj/item/ammo_magazine/packet/smartrifle
+	name = "Box of SG-25 10x26mm"
+	desc = "A box containing 300 rounds of smart 10x26mm for the SG-25 Smart Rifle."
+	icon_state = "t25_box"
+	default_ammo = /datum/ammo/bullet/smartrifle
+	caliber = CALIBER_10x26_CASELESS
+	current_rounds = 300
+	max_rounds = 300
+	w_class = WEIGHT_CLASS_NORMAL
+
 // pistol packets
 
 /obj/item/ammo_magazine/packet/p9mm

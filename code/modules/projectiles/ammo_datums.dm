@@ -1192,6 +1192,19 @@ datum/ammo/bullet/revolver/tp44
 	penetration = 15
 	sundering = 1
 
+/datum/ammo/bullet/smartrifle
+	name = "smartrifle bullet"
+	icon_state = "redbullet" //Red bullets to indicate friendly fire restriction
+	hud_state = "smartgun"
+	hud_state_empty = "smartgun_empty"
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
+	max_range = 30
+	damage_falloff = 0.1
+	accurate_range = 20
+	damage = 13
+	penetration = 15
+	sundering = 2
+
 /datum/ammo/bullet/turret
 	name = "autocannon bullet"
 	icon_state = "redbullet"

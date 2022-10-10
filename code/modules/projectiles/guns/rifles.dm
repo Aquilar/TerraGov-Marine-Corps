@@ -1114,6 +1114,65 @@
 	starting_attachment_types = list(/obj/item/attachable/motiondetector, /obj/item/attachable/bipod)
 
 //-------------------------------------------------------
+// T-25, SG-25 Smartrifle
+
+/obj/item/weapon/gun/rifle/standard_smartrifle
+	name = "\improper SG-25 Smart Rifle"
+	desc = "The SG-25 is the TGMC's current standard IFF-capable brust rifle. It's known for its ability to lay down quick fire support very well with it's rapid bursts of light armour shredding smart rounds. Requires special training and it cannot turn off IFF. It uses 10x26mm ammunition."
+	icon = 'icons/Marine/gun64.dmi'
+	icon_state = "t25"
+	item_state = "t25"
+	caliber = CALIBER_10x26_CASELESS //codex
+	max_shells = 80 //codex
+	force = 15
+	fire_sound = "gun_smartgun"
+	dry_fire_sound = 'sound/weapons/guns/fire/m41a_empty.ogg'
+	unload_sound = 'sound/weapons/guns/interact/T42_unload.ogg'
+	reload_sound = 'sound/weapons/guns/interact/T42_reload.ogg'
+	default_ammo_type = /obj/item/ammo_magazine/rifle/standard_smartrifle
+	allowed_ammo_types = list(/obj/item/ammo_magazine/rifle/standard_smartrifle)
+	attachable_allowed = list(
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/verticalgrip,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/gyro,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/bipod,
+		/obj/item/attachable/burstfire_assembly,
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/heavy_barrel,
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonetknife,
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/scope/marine,
+		/obj/item/weapon/gun/shotgun/combat/masterkey,
+		/obj/item/weapon/gun/flamer/mini_flamer,
+		/obj/item/weapon/gun/grenade_launcher/underslung,
+		/obj/item/attachable/motiondetector,
+		/obj/item/attachable/buildasentry,
+		/obj/item/weapon/gun/rifle/pepperball/pepperball_mini,
+		/obj/item/attachable/shoulder_mount,
+	)
+
+	flags_gun_features = GUN_AMMO_COUNTER|GUN_WIELDED_FIRING_ONLY|GUN_IFF
+	gun_firemode_list = list(GUN_FIREMODE_BURSTFIRE, GUN_FIREMODE_AUTOBURST)
+	gun_skill_category = GUN_SKILL_SMARTGUN //Uses SG skill for the penalties.
+	attachable_offset = list("muzzle_x" = 49, "muzzle_y" = 18,"rail_x" = 22, "rail_y" = 21, "under_x" = 33, "under_y" = 14, "stock_x" = 12, "stock_y" = 13)
+	fire_delay = 0.40 SECONDS
+	burst_delay = 0.1 SECONDS
+	burst_amount = 2
+	accuracy_mult_unwielded = 0.5
+	accuracy_mult = 1.2
+	scatter = -3
+	scatter_unwielded = 60
+	aim_slowdown = 0.60
+	wield_delay = 0.6 SECONDS
+
+//-------------------------------------------------------
 //Sectoid Rifle
 
 /obj/item/weapon/gun/rifle/sectoid_rifle

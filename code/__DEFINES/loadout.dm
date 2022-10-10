@@ -132,6 +132,9 @@ GLOBAL_LIST_INIT(smartgunner_gear_listed_products, list(
 	/obj/item/weapon/gun/minigun/smart_minigun = list(CAT_SGSUP, "SG-85 Handheld Gatling Gun", 27, "orange"), //If a smartgunner buys a SG-85, then they should be able to buy only 1 powerpack and 2 ammo bins
 	/obj/item/ammo_magazine/minigun_powerpack/smartgun =  list(CAT_SGSUP, "SG-85 Powerpack", 10, "black"),
 	/obj/item/ammo_magazine/packet/smart_minigun = list(CAT_SGSUP, "SG-85 Ammo Bin", 4, "black"),
+	/obj/item/weapon/gun/rifle/standard_smartrifle = list(CAT_SGSUP, "SG-25 Smart Rifle", 28, "orange"), //if a smart gunner buys an SG-25, then they should be able to buy 6 Magazines and 1 box
+	/obj/item/ammo_magazine/rifle/standard_smartrifle = list(CAT_SGSUP, "SG-25 Magazine" , 2, "black"),
+	/obj/item/ammo_magazine/packet/smartrifle = list(CAT_SGSUP, "SG-25 Ammo Box" , 5, "black"),
 	))
 
 

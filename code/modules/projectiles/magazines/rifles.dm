@@ -254,6 +254,19 @@
 	icon_state_mini = "mag_sg29"
 
 //-------------------------------------------------------
+//SMARTRIFLE AMMUNITION
+
+/obj/item/ammo_magazine/rifle/standard_smartrifle
+	name = "\improper SG-25 magazine (10x26mm)"
+	desc = "An assault rifle magazine carefully loaded with 10x26mm specialized smart rounds."
+	caliber = CALIBER_10x26_CASELESS
+	icon_state = "t25"
+	w_class = WEIGHT_CLASS_NORMAL
+	default_ammo = /datum/ammo/bullet/smartrifle
+	max_rounds = 80
+	icon_state_mini = "mag_rifle"
+
+//-------------------------------------------------------
 //Sectoid Rifle
 
 /obj/item/ammo_magazine/rifle/sectoid_rifle
