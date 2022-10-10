@@ -638,6 +638,7 @@ datum/ammo/bullet/revolver/tp44
 	hud_state = "rifle_heavy"
 	damage = 20
 	penetration = 10
+	sundering = 0.25
 
 /datum/ammo/bullet/rifle/tx8
 	name = "A19 high velocity bullet"
