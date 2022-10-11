@@ -701,7 +701,7 @@ datum/ammo/bullet/revolver/tp44
 	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SUNDERING
 	penetration = 15
 	damage = 32.5
-	sundering = 1.25
+	sundering = 0.5
 
 /datum/ammo/bullet/rifle/standard_br/incendiary
 	name = "incendiary light marksman bullet"
